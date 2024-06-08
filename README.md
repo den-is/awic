@@ -6,6 +6,12 @@ Allows to quickly calculate CPU and Memory resources for the `N` number instance
 
 Another useful tool https://github.com/aws/amazon-ec2-instance-selector
 
+## Requirements
+Requires properly configured AWS credentials in users terminal.
+
+Minimum required AWS IAM policy `ec2:DescribeInstanceTypes`
+
+## Usage
 ```txt
 awic --help
 Usage of awic:
