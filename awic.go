@@ -13,7 +13,6 @@ import (
 )
 
 func main() {
-
 	insttype := flag.String("i", "", "Instance type. Required. Example: c5.4xlarge")
 	multiplier := flag.Int("m", 1, "Instances multiplier")
 	profile := flag.String("p", "", "AWS profile name")
@@ -82,5 +81,4 @@ func main() {
 			(instMemMiB/1024)*int64(*multiplier),
 		)
 	}
-
 }
