@@ -14,7 +14,7 @@ import (
 
 func main() {
 	insttype := flag.String("i", "", "Instance type. Required. Example: c5.4xlarge")
-	multiplier := flag.Int("m", 1, "Instances multiplier")
+	multiplier := flag.Int("x", 1, "Instances multiplier")
 	profile := flag.String("p", "", "AWS profile name")
 	region := flag.String("r", "", "AWS region name")
 	flag.Parse()
