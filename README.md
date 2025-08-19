@@ -17,7 +17,7 @@ awic --help
 Usage of awic:
   -i string
         Instance type. Required. Example: c5.4xlarge
-  -m int
+  -x int
         Instances multiplier (default 1)
   -p string
         AWS profile name
@@ -32,7 +32,7 @@ awic -p nonprd -i r5a.16xlarge
 r5a.16xlarge - vCPUs=32, Mem GiB=512, Gbps=12/12, Pods=737
 
 # Quickly output resulting CPU and Memory for X instances of the same type
-awic -i r5a.16xlarge -m 2
+awic -i r5a.16xlarge -x 2
 r5a.16xlarge - vCPUs=32, Mem GiB=512, Gbps=12/12, Pods=737
 x2 - vCPUs=64, Mem=1024
 ```
